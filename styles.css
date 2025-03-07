@@ -1,0 +1,66 @@
+body {
+    background-color: #860049;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* чтобы padding и border не увеличивали размеры */
+}
+
+.square {
+    width: calc(100vw - 60px);
+    height: calc(100vh - 60px);
+    background-color: #E768AD;
+    margin: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* по центру горизонтально */
+    padding-top: 15px; /* отступ от верха */
+}
+
+.text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: #860049;
+}
+.text-2 {
+    font-family: 'Great Vibes', cursive;
+   font-size: 32px;
+    color: #860049;
+    margin-top: 5px; /* небольшой отступ между текстами */
+}
+
+.text-3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: #860049;
+    margin: 0;
+    display: flex;
+  justify-content: center;
+  
+
+}
+
+.image-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* идеально в центр */
+    max-width: 80%;
+    max-height: 80%;
+    
+}
+
+.link-image {
+    width: 430px;  /* ширина */
+    height: auto;  /* чтобы сохранялись пропорции */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.link-image:hover {
+    transform: scale(1.1);
+}
